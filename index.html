@@ -1,211 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tamal Bhattacharjee | RF Optimization Specialist</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tamal Bhattacharjee | Telecom & Data Portfolio</title>
   <style>
-    :root {
-      --primary: #2563eb;
-      --primary-light: #3b82f6;
-      --secondary: #1e40af;
-      --dark: #1e293b;
-      --light: #f8fafc;
-      --gray: #64748b;
-      --light-gray: #e2e8f0;
-      --success: #10b981;
-    }
-
-    * {
-      box-sizing: border-box;
+    body {
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
     }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      line-height: 1.6;
-      color: var(--dark);
-      background-color: var(--light);
-      padding: 0;
+    header {
+      background-color: #1f2937;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
     }
-
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    h2 {
+      color: #111827;
+      border-left: 5px solid #2563eb;
+      padding-left: 10px;
+    }
     .container {
-      max-width: 1200px;
-      margin: 0 auto;
+      max-width: 900px;
+      margin: 40px auto;
       padding: 0 20px;
     }
-
-    header {
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      color: white;
-      padding: 60px 0 80px;
-      text-align: center;
-      position: relative;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
       overflow: hidden;
     }
-
-    /* ... (keep all previous CSS styles) ... */
-
-    .dashboard-container {
-      background: white;
-      border-radius: 12px;
-      padding: 20px;
-      margin-bottom: 30px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
     }
-
-    .chart-container {
-      height: 400px;
-      margin: 20px 0;
+    .card-content {
+      padding: 15px;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9em;
+      color: #666;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
     }
   </style>
 </head>
-
 <body>
-  <header>
-    <div class="container">
-      <h1>👋 Hi, I'm Tamal Bhattacharjee</h1>
-      <p class="tagline">Solution Architect | RF Optimization SME | 5G & LTE Specialist</p>
-      <div class="contact-info">
-        <div class="contact-item">
-          <i class="fas fa-map-marker-alt"></i>
-          <span>Kolkata, India</span>
-        </div>
-        <div class="contact-item">
-          <i class="fas fa-envelope"></i>
-          <a href="mailto:tamalbabai.tb@gmail.com">tamalbabai.tb@gmail.com</a>
-        </div>
-        <div class="contact-item">
-          <i class="fas fa-phone-alt"></i>
-          <span>+91-9874940751 / +91-7908811588</span>
-        </div>
-      </div>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/tamal-bhattacharjee/" class="social-link" target="_blank">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="https://www.tamal.bhattacharjee.com/" class="social-link" target="_blank">
-          <i class="fas fa-globe"></i>
-        </a>
+
+<header>
+  <h1>Tamal Bhattacharjee</h1>
+  <p>📡 Solution Architect | RF Optimization Specialist | 5G & LTE Expert</p>
+</header>
+
+<div class="container">
+  <h2>📊 Power BI Dashboards</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://github.com/user-attachments/assets/1c3029e8-8d2e-4e1b-9ce4-eec8c0c9c2a1" alt="Drive Test Summary">
+      <div class="card-content">
+        <strong>Drive Test KPI Tracker</strong><br />
+        RSRP, SINR, CR audit, alarms – all in one interactive dashboard.
       </div>
     </div>
-  </header>
-
-  <main class="container">
-    <section id="about">
-      <h2>About Me</h2>
-      <div class="about-content">
-        <p>
-          I'm <span class="highlight">Tamal Bhattacharjee</span>, a seasoned telecom engineer with over <span class="highlight">13 years of experience</span> in <span class="highlight">RF Optimization</span>, specializing in <span class="highlight">5G Standalone (SA)</span>, <span class="highlight">LTE</span>, and <span class="highlight">VoLTE</span>.
-        </p>
-        <!-- Keep rest of your about content -->
+    <div class="card">
+      <img src="https://github.com/user-attachments/assets/28e38acb-6014-4cdf-ba98-32a28efc8f6c" alt="CLOT KPI">
+      <div class="card-content">
+        <strong>CLOT Optimizer</strong><br />
+        Delta analysis & tilt/azimuth recommendations from real data.
       </div>
-    </section>
+    </div>
+  </div>
 
-    <section id="projects">
-      <h2>Interactive Dashboards</h2>
-      
-      <!-- Power BI Embedded Dashboard -->
-      <div class="dashboard-container">
-        <h3>Live Drive Test KPI Tracker</h3>
-        <div class="chart-container">
-          <iframe 
-            width="100%" 
-            height="500" 
-            src="https://app.powerbi.com/view?r=your-embed-code" 
-            frameborder="0" 
-            allowfullscreen>
-          </iframe>
-        </div>
-        <p>Real-time visualization of RSRP, SINR, and CR audit metrics with interactive filtering.</p>
-      </div>
+  <h2>📁 About Me</h2>
+  <p>I’m a telecom engineer with over 13 years of hands-on experience in RF optimization, 5G/LTE tuning, KPI improvement, and network automation. I specialize in transforming raw network data into actionable insights using tools like Power BI, Excel VBA, and Python.</p>
 
-      <!-- Chart.js Visualization -->
-      <div class="dashboard-container">
-        <h3>CLOT Performance Trends</h3>
-        <div class="chart-container">
-          <canvas id="clotTrendChart"></canvas>
-        </div>
-        <p>Historical analysis of CLOT success rates across different vendors and zones.</p>
-      </div>
+  <h2>🔗 Connect With Me</h2>
+  <ul>
+    <li>Email: <a href="mailto:tamalbabai.tb@gmail.com">tamalbabai.tb@gmail.com</a></li>
+    <li>GitHub: <a href="https://github.com/Babaitamal007" target="_blank">github.com/Babaitamal007</a></li>
+    <li>LinkedIn: <a href="https://linkedin.com/in/tamal-bhattacharjee-2015608b" target="_blank">linkedin.com/in/tamal-bhattacharjee</a></li>
+  </ul>
+</div>
 
-      <!-- Second Chart.js Visualization -->
-      <div class="dashboard-container">
-        <h3>Zone-wise KPI Analysis</h3>
-        <div class="chart-container">
-          <canvas id="kpiAnalysisChart"></canvas>
-        </div>
-        <p>Comparative performance metrics across network zones with anomaly detection.</p>
-      </div>
-    </section>
-  </main>
+<footer>
+  © 2025 Tamal Bhattacharjee — Powered by GitHub Pages
+</footer>
 
-  <footer>
-    <p>Made with <span class="heart">❤️</span> by Tamal Bhattacharjee</p>
-    <p>© 2025 All Rights Reserved</p>
-  </footer>
-
-  <script>
-    // CLOT Trend Chart
-    const clotCtx = document.getElementById('clotTrendChart');
-    new Chart(clotCtx, {
-      type: 'line',
-      data: {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
-        datasets: [{
-          label: 'Vendor A',
-          data: [82, 84, 87, 85, 89, 91],
-          borderColor: '#3b82f6',
-          tension: 0.1
-        }, {
-          label: 'Vendor B',
-          data: [78, 81, 83, 80, 85, 88],
-          borderColor: '#10b981',
-          tension: 0.1
-        }]
-      },
-      options: {
-        responsive: true,
-        plugins: {
-          title: {
-            display: true,
-            text: 'CLOT Success Rate (%)'
-          }
-        }
-      }
-    });
-
-    // KPI Analysis Chart
-    const kpiCtx = document.getElementById('kpiAnalysisChart');
-    new Chart(kpiCtx, {
-      type: 'bar',
-      data: {
-        labels: ['North', 'South', 'East', 'West', 'Central'],
-        datasets: [{
-          label: 'RSRP > -100dBm',
-          data: [92, 88, 95, 90, 93],
-          backgroundColor: '#3b82f6'
-        }, {
-          label: 'SINR > 15dB',
-          data: [85, 82, 89, 80, 87],
-          backgroundColor: '#10b981'
-        }]
-      },
-      options: {
-        responsive: true,
-        plugins: {
-          title: {
-            display: true,
-            text: 'Zone-wise KPI Compliance (%)'
-          }
-        }
-      }
-    });
-  </script>
 </body>
 </html>
